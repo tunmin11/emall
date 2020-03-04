@@ -15,6 +15,13 @@ class CreateWeeklyTutorialAnswersTable extends Migration
     {
         Schema::create('weekly_tutorial_answers', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->unsignedBigInteger('weekly_tutorial_id');
+            $table->string('submission');
+            $table->bigInteger('mark');
+            $table->integer('assess_by_id');
+            $table->integer('trainee_id');
+            $table->string('assessment_remark');
+            $table->string('assessment_status');
             $table->timestamps();
         });
     }

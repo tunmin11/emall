@@ -16,7 +16,7 @@ class CreateDiscussRoomsTable extends Migration
         Schema::create('discuss_rooms', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name');
-            $table->unsignedBigInteger('class_id');
+            $table->unsignedBigInteger('classroom_id');
             $table->timestamps();
         });
     }

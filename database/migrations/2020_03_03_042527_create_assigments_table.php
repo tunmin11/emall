@@ -16,7 +16,7 @@ class CreateAssigmentsTable extends Migration
         Schema::create('assigments', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name');
-            $table->unsignedBigInteger('class_id');
+            $table->unsignedBigInteger('classroom_id');
             $table->date('start_date');
             $table->date('end_date');
             $table->timestamps();

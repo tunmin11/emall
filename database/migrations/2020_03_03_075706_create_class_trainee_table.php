@@ -15,8 +15,9 @@ class CreateClassTraineeTable extends Migration
     {
         Schema::create('class_trainee', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->unsignedBigInteger('class_id');
+            $table->unsignedBigInteger('classroom_id');
             $table->unsignedBigInteger('trainee_id');
+            $table->string('payment_archive');
             $table->timestamps();
         });
     }

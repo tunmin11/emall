@@ -6,5 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class Chapter extends Model
 {
-    protected $fillable = ['id','class_id','trainer_id'];
+    protected $fillable = ['id','classroom_id','trainer_id'];
 }
