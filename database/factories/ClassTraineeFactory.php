@@ -2,10 +2,10 @@
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
-use App\Model;
+use App\ClassTrainee;
 use Faker\Generator as Faker;
 
-$factory->define(Model::class, function (Faker $faker) {
+$factory->define(ClassTrainee::class, function (Faker $faker) {
     return [
         'classroom_id' => function (){
         	 return factory(App\Classroom::class)->create()->id;

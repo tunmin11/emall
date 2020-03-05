@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\view;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,5 +14,6 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+	$_CONTENT = view('home.page');
+    return view('index',compact('_CONTENT'));
 });
