@@ -11,11 +11,8 @@ class GeneralTablesSeeder extends Seeder
      */
     public function run()
     {
-        factory(App\Admin::class)->create();
         factory(App\Course::class)->create();
         factory(App\Classroom::class)->create();
-        factory(App\Trainer::class)->create();
-        factory(App\Trainee::class)->create();
         factory(App\ClassTrainee::class)->create();
         factory(App\ClassTrainer::class)->create();
         factory(App\Chapter::class)->create();

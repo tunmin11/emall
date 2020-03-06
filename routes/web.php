@@ -17,3 +17,6 @@ Route::get('/', function () {
 	$_CONTENT = view('home.page');
     return view('index',compact('_CONTENT'));
 });
+
+Route::get('/admin/login','Auth\admin\LoginController@adminLoginForm');
+Route::post('/admin/singin','Auth\admin\LoginController@login')->name('adminLogin');
